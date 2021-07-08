@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "site": "angular-db-fbc82",
+    "public": "deploy",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

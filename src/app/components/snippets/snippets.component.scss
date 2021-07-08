@@ -1,0 +1,41 @@
+@import "../../colors.scss";
+
+.snippets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
+  grid-auto-flow: row;
+  justify-content: flex-start;
+  grid-gap: 1rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: $color-dark-gray;
+
+  &__tab {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color-dark-gray, 0.1);
+    border-radius: 5rem;
+    margin: 0 1rem 2rem 0;
+
+    span {
+      padding-left: 1rem;
+    }
+
+    &:nth-child(2) {
+      color: $color-light-blue-1;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        border-top: solid 15px rgba(133, 133, 155, 0.1);
+        border-left: solid 9px transparent;
+        border-right: solid 15px transparent;
+        top: 100%;
+        left: 50%;
+      }
+    }
+  }
+}

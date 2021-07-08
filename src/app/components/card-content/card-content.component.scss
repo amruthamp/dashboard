@@ -1,0 +1,145 @@
+@import "../../colors.scss";
+
+:host {
+  grid-row: 6 / 7;
+  grid-column: 1 / -1;
+}
+
+.card-content {
+  display: grid;
+  background-color: $color-dark-blue-1;
+  margin-top: 3rem;
+  grid-template-rows: repeat(5, min-content);
+  padding: 2rem;
+  border-radius: 5px;
+
+  &--search {
+    display: flex;
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid $color-dark-gray-2;
+
+    &__form {
+      display: flex;
+      flex: 1;
+
+      &__input {
+        background-color: rgba(9, 18, 34, 1);
+        font-size: 1.4rem;
+        color: $color-dark-gray;
+        border: none;
+        border-radius: 5px;
+        padding: 1rem 2.5rem;
+        margin-right: -3.25rem;
+      }
+
+      &__button {
+        border: none;
+        background-color: rgba(9, 18, 34, 1);
+      }
+    }
+    &__add {
+      display: flex;
+
+      &_teams {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $color-light-blue-1;
+        flex-grow: 1;
+        white-space: nowrap;
+        align-self: center;
+        padding-left: 18px;
+      }
+    }
+  }
+}
+.card-text {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  &__no {
+    span {
+      color: $color-dark-gray;
+    }
+  }
+  &__sort {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: flex-end;
+    align-items: center;
+    grid-gap: 1.3rem;
+    img {
+      height: 1rem;
+    }
+    span {
+      color: $color-dark-gray;
+    }
+  }
+}
+
+.item {
+  display: grid;
+  grid-auto-flow: row;
+  margin-top: 2rem;
+  grid-gap: 4.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  &-1 {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    padding: 3rem 0.5rem;
+    background-color: #1c2b47;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem;
+    text-align: center;
+    border-radius: 5px;
+
+    &__circle {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      border-radius: 50%;
+      background-color: $color-dark-gray;
+      box-shadow: -8.9px 6.4px 10.2px -1px rgba(0, 0, 0, 0.03);
+      img {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &__shortname {
+      color: $color-dark-gray;
+      padding-top: 1rem;
+    }
+    &__fullname {
+      padding-top: 1rem;
+    }
+    &__player {
+      font-size: 1.2rem;
+      color: $color-light-gray;
+      padding-top: 0.5rem;
+
+      span {
+        color: #e84d4d;
+      }
+    }
+  }
+}
+
+.reset {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  justify-self: flex-end;
+  align-self: center;
+  color: $color-light-blue-1;
+  span {
+    padding-left: 0.5rem;
+  }
+}

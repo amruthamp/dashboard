@@ -1,0 +1,232 @@
+@import "../../colors";
+
+:host {
+  grid-row: 5 / -1;
+  grid-column: 1 / -1;
+}
+.teams {
+  display: flex;
+  flex-direction: column;
+  padding: 9rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+  background-color: rgba(14, 25, 45, 0.9);
+
+  img {
+    height: 10rem;
+    width: auto;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+  }
+  p {
+    font-size: 1.4rem;
+    color: $color-dark-gray;
+    margin-bottom: 2rem;
+  }
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2.5rem;
+    background-color: rgba(93, 219, 238, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    img {
+      height: 2rem;
+      width: auto;
+    }
+    span {
+      font-size: 1.4rem;
+      color: $color-light-blue-1;
+      padding-left: 1rem;
+    }
+  }
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, $alpha: 0.8);
+  overflow-y: auto;
+}
+.model {
+  width: 60%;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(6, min-content) 1fr;
+  grid-template-columns: 1fr;
+  background-color: $color-dark-blue-3;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+}
+
+.model-header {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  padding: 1.5rem 2rem 1rem 2rem;
+  justify-content: space-evenly;
+  h1 {
+    justify-self: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  a {
+    justify-self: flex-end;
+    cursor: pointer;
+  }
+}
+.model-border hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.select-team {
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.selection {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 1.2rem 2rem 1.5rem 2rem;
+}
+
+.search {
+  &-form {
+    width: 15rem;
+    display: flex;
+
+    &__input {
+      background-color: rgba(9, 18, 34, 1);
+      font-size: 1.4rem;
+      color: $color-dark-gray;
+      border: none;
+      border-radius: 5px;
+      padding: 1rem 2rem 1rem 4rem;
+      margin-right: -18rem;
+      width: 90%;
+    }
+    &__button {
+      border: none;
+      background-color: rgba(9, 18, 34, 1);
+    }
+  }
+}
+
+.create-team {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 2rem;
+    width: auto;
+  }
+  span {
+    padding-left: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-light-blue-1;
+  }
+}
+.model-border-alignment {
+  padding: 1rem 1.5rem 1rem 2.5rem;
+}
+
+.card-text {
+  padding: 1rem 2rem 1rem 2rem;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  span {
+    color: $color-dark-gray;
+  }
+  &__no {
+    display: flex;
+    flex: 1;
+  }
+  &__sort {
+    display: flex;
+    img {
+      height: 0.5rem;
+      align-self: center;
+    }
+  }
+}
+
+.item {
+  grid-row: 7 / 8;
+  padding: 1rem 2rem 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-gap: 2rem;
+}
+
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-dark-blue-1;
+  align-items: center;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 2rem;
+  border-radius: 5px;
+
+  &__circle {
+    order: -2;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    background-color: $color-dark-gray;
+    margin-bottom: 1.8rem;
+    img {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__shortname {
+    order: -1;
+    color: $color-dark-gray;
+    margin-bottom: 1.8rem;
+  }
+
+  &__fullname {
+    flex: 1;
+    margin-bottom: 1.5rem;
+  }
+}
+.add-button {
+  grid-row: 8 / -1;
+  justify-self: flex-end;
+  padding: 1rem 2rem 1rem 2rem;
+
+  button {
+    background-image: linear-gradient(to top, $color-light-blue-1, #2280b8);
+    padding: 1.5rem 3rem;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+  }
+}
