@@ -1,5 +1,9 @@
 @import "../../colors.scss";
 
+:host {
+  grid-row: 4 / 5;
+  grid-column: 1 / -1;
+}
 .snippets {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));

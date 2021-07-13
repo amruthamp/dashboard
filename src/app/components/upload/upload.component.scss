@@ -1,5 +1,10 @@
 @import "../../colors.scss";
 
+:host {
+  grid-row: 3 / 4;
+  grid-column: 8 / -1;
+  justify-self: flex-end;
+}
 .upload {
   display: grid;
   grid-row-gap: 1.5rem;

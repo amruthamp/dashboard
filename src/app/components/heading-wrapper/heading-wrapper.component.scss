@@ -1,9 +1,10 @@
 @import "../../colors.scss";
 
 :host {
-  grid-row: 1 / 2;
-  grid-column: 1 / 13;
+  grid-row: 3 / 4;
+  grid-column: 1 / 7;
 }
+
 .heading-wrapper {
   padding-top: 3rem;
   h2 {
@@ -12,7 +13,7 @@
     padding-bottom: 1.5rem;
   }
 
-  > div {
+  & > div {
     display: flex;
     padding-bottom: 2rem;
     justify-content: space-between;

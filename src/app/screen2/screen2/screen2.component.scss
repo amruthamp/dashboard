@@ -8,17 +8,7 @@
     minmax(3rem, 1fr)
     repeat(3, minmax(min-content, 14rem));
 }
-
-app-heading-wrapper {
-  grid-row: 3 / 4;
-  grid-column: 1 / 7;
-}
-app-upload {
-  grid-row: 3 / 4;
-  grid-column: 8 / -1;
-  justify-self: flex-end;
-}
-app-snippets {
+.snippets {
   grid-row: 5 / 6;
   grid-column: 1 / -1;
 }

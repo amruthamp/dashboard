@@ -7,7 +7,81 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamsComponent implements OnInit {
   constructor() {}
+
+  cardData: any = [
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+    {
+      teamShortName: 'RCB',
+      teamFullName: 'Royal Challengers Bangalore',
+      playerNo: 12,
+      imageUr1: 'assets/team-logo.png',
+    },
+  ];
+
   popup: boolean = false;
 
   ngOnInit(): void {}
+
+  onclick(): void {
+    this.popup = !this.popup;
+  }
 }

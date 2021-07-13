@@ -1,52 +1,8 @@
 <section class="features">
   <div class="features-1">
-    <div class="features-1__column">
-      <div class="features-1__column-label">Start date</div>
-      <div class="features-1__column-value">23 Nov, 2020</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Duration</div>
-      <div class="features-1__column-value">6 Months</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Country</div>
-      <div class="features-1__column-value">India</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Teams</div>
-      <div class="features-1__column-value">8 Teams</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Players</div>
-      <div class="features-1__column-value">160 Players</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Total Events</div>
-      <div class="features-1__column-value">60 Events</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Sponsors</div>
-      <div class="features-1__column-value">10 Sponsors</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Commentators</div>
-      <div class="features-1__column-value">10 Commentators</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Merchandises</div>
-      <div class="features-1__column-value">100 Merchandises</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Polls</div>
-      <div class="features-1__column-value">100 Polls</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Total Bets</div>
-      <div class="features-1__column-value">25 Bets</div>
-    </div>
-    <div class="features-1__column">
-      <div class="features-1__column-label">Total Views</div>
-      <div class="features-1__column-value">1.5 Millions Views</div>
+    <div class="features-1__column" *ngFor="let info of infoData">
+      <div class="features-1__column-label">{{ info.label }}</div>
+      <div class="features-1__column-value">{{ info.value }}</div>
     </div>
   </div>
 </section>

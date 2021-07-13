@@ -1,0 +1,45 @@
+@import "../../colors.scss";
+
+.item-1 {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  padding: 3rem 0.5rem;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1rem;
+  text-align: center;
+  border-radius: 5px;
+
+  &__circle {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    background-color: $color-dark-gray;
+    box-shadow: -8.9px 6.4px 10.2px -1px rgba(0, 0, 0, 0.03);
+    img {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__shortname {
+    color: $color-dark-gray;
+    padding-top: 1rem;
+  }
+  &__fullname {
+    padding-top: 1rem;
+  }
+  &__player {
+    font-size: 1.2rem;
+    color: $color-light-gray;
+    padding-top: 0.5rem;
+
+    span {
+      color: #e84d4d;
+    }
+  }
+}

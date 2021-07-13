@@ -7,17 +7,17 @@
     removed from the tournament if the team has not yet taken part in any of the
     events
   </p>
-  <button class="teams-button" (click)="popup = true">
+  <button class="teams-button" (click)="onclick()">
     <img src="../../assets/add-icon.svg" alt="" />
     <span>Add Teams</span>
   </button>
 </div>
 
 <div class="mask" *ngIf="popup">
-  <div class="model" *ngIf="popup">
+  <div class="model">
     <div class="model-header">
       <h1>Team Repository</h1>
-      <a class="close" (click)="popup = false"
+      <a class="close" (click)="onclick()"
         ><img src="../../assets/close-button.svg" alt=""
       /></a>
     </div>
@@ -58,48 +58,11 @@
       </div>
     </div>
     <div class="item">
-      <div class="item-1">
-        <div class="item-1__fullname">Royal Challengers Bangalore</div>
-        <div class="item-1__shortname">RCB</div>
-        <div class="item-1__circle">
-          <img src="assets/team-logo.png" alt="" />
-        </div>
-      </div>
-      <div class="item-1">
-        <div class="item-1__fullname">Royal Challengers Bangalore</div>
-        <div class="item-1__shortname">RCB</div>
-        <div class="item-1__circle">
-          <img src="assets/team-logo.png" alt="" />
-        </div>
-      </div>
-      <div class="item-1">
-        <div class="item-1__fullname">Royal Challengers Bangalore</div>
-        <div class="item-1__shortname">RCB</div>
-        <div class="item-1__circle">
-          <img src="assets/team-logo.png" alt="" />
-        </div>
-      </div>
-      <div class="item-1">
-        <div class="item-1__fullname">Royal Challengers Bangalore</div>
-        <div class="item-1__shortname">RCB</div>
-        <div class="item-1__circle">
-          <img src="assets/team-logo.png" alt="" />
-        </div>
-      </div>
-      <div class="item-1">
-        <div class="item-1__fullname">Royal Challengers Bangalore</div>
-        <div class="item-1__shortname">RCB</div>
-        <div class="item-1__circle">
-          <img src="assets/team-logo.png" alt="" />
-        </div>
-      </div>
-      <div class="item-1">
-        <div class="item-1__fullname">Royal Challengers Bangalore</div>
-        <div class="item-1__shortname">RCB</div>
-        <div class="item-1__circle">
-          <img src="assets/team-logo.png" alt="" />
-        </div>
-      </div>
+      <app-card
+        class="color"
+        *ngFor="let card of cardData"
+        [card]="card"
+      ></app-card>
     </div>
     <div class="add-button">
       <button [routerLink]="['./screen2']">Add Teams</button>

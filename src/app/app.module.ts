@@ -12,6 +12,8 @@ import { ScreenComponent } from './screen/screen/screen.component';
 import { Screen2Component } from './screen2/screen2/screen2.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { CardContentComponent } from './components/card-content/card-content.component';
+import { CardComponent } from './components/card/card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,11 @@ import { CardContentComponent } from './components/card-content/card-content.com
     Screen2Component,
     FeaturesComponent,
     CardContentComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: 'screen2', component: Screen2Component },
       { path: '**', component: ScreenComponent },

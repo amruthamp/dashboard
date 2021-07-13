@@ -24,78 +24,11 @@
     </div>
   </div>
   <div class="item">
-    <div class="item-1">
-      <div class="item-1__circle">
-        <img src="assets/team-logo.png" alt="" />
-      </div>
-      <div class="item-1__shortname">RCB</div>
-      <div class="item-1__fullname">Royal Challengers Bangalore</div>
-      <div class="item-1__player">Players-12</div>
-    </div>
-    <div class="item-1">
-      <div class="item-1__circle">
-        <img src="assets/team-logo.png" alt="" />
-      </div>
-      <div class="item-1__shortname">RCB</div>
-      <div class="item-1__fullname">Royal Challengers Bangalore</div>
-      <div class="item-1__player"><span>Players-12</span></div>
-    </div>
-    <div class="item-1">
-      <div class="item-1__circle">
-        <img src="assets/team-logo.png" alt="" />
-      </div>
-      <div class="item-1__shortname">RCB</div>
-      <div class="item-1__fullname">Royal Challengers Bangalore</div>
-      <div class="item-1__player">Players-12</div>
-    </div>
-    <div class="item-1">
-      <div class="item-1__circle">
-        <img src="assets/team-logo.png" alt="" />
-      </div>
-      <div class="item-1__shortname">RCB</div>
-      <div class="item-1__fullname">Royal Challengers Bangalore</div>
-      <div class="item-1__player">Players-12</div>
-    </div>
-    <div class="item-1">
-      <div class="item-1__circle">
-        <img src="assets/team-logo.png" alt="" />
-      </div>
-      <div class="item-1__shortname">RCB</div>
-      <div class="item-1__fullname">Royal Challengers Bangalore</div>
-      <div class="item-1__player">Players-12</div>
-    </div>
-    <div class="item-1">
-      <div class="item-1__circle">
-        <img src="assets/team-logo.png" alt="" />
-      </div>
-      <div class="item-1__shortname">RCB</div>
-      <div class="item-1__fullname">Royal Challengers Bangalore</div>
-      <div class="item-1__player"><span> Players-12</span></div>
-    </div>
-    <div class="item-1">
-      <div class="item-1__circle">
-        <img src="assets/team-logo.png" alt="" />
-      </div>
-      <div class="item-1__shortname">RCB</div>
-      <div class="item-1__fullname">Royal Challengers Bangalore</div>
-      <div class="item-1__player">Players-12</div>
-    </div>
-    <div class="item-1">
-      <div class="item-1__circle">
-        <img src="assets/team-logo.png" alt="" />
-      </div>
-      <div class="item-1__shortname">RCB</div>
-      <div class="item-1__fullname">Royal Challengers Bangalore</div>
-      <div class="item-1__player">Players-12</div>
-    </div>
-    <div class="item-1">
-      <div class="item-1__circle">
-        <img src="assets/team-logo.png" alt="" />
-      </div>
-      <div class="item-1__shortname">RCB</div>
-      <div class="item-1__fullname">Royal Challengers Bangalore</div>
-      <div class="item-1__player">Players-12</div>
-    </div>
+    <app-card
+      class="color"
+      *ngFor="let card of cardData"
+      [card]="card"
+    ></app-card>
   </div>
   <div class="reset">
     <img src="assets/reset-icon.svg" alt="" />
